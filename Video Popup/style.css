@@ -1,0 +1,81 @@
+.active {
+    visibility:hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+}
+
+.mainContainer {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 550px;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: lavender;
+}
+
+.mainContainer img {
+    width: 100%;
+    height: 450px;
+}
+
+.videoContainer {
+    position: fixed;
+}
+
+.watchButton {
+    border: none;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    color: white;
+    font-size: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.mainContainer h1 {
+    margin: 5px 0px;
+    font-weight: 500;
+}
+
+.mainContainer p {
+    margin: 15px 0px;
+}
+
+.watchButton:hover {
+    background-color: red;
+}
+
+.videoContainer{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.videoContainer video {
+    height: 600px;
+}
+
+.closeIcon{
+    color: white;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
